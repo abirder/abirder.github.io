@@ -1,0 +1,45 @@
+body {
+    background-color: #f0f8ff;
+    margin: 0px 25px 0px 25px;
+}
+
+h1 {
+    color: navy;
+    font-family: serif;
+    font-size: 3em;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 3px;
+}
+
+h2 {
+    margin-top: 0px;
+    text-align: center;
+    font-family: serif;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+    line-height: 90%;
+}
+
+p {
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+h3 {
+    color: navy;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
