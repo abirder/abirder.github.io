@@ -1,0 +1,87 @@
+/*CSS DOCUMENT*/
+
+img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.location {
+    font-size: 1.1em;
+}
+
+figure {
+    margin: 0;
+}
+
+body {
+    background-color: none;
+    font-family: 'Nunito';
+    margin: 1.5em;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(76, 120, 74);
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+nav {
+    height: 4em;
+    margin-left: 2em;
+    font-weight: bold;
+    word-spacing: 1em;
+}
+
+nav ul {
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+}
+
+nav ul li a {
+    color: #2e6129;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul p {
+    font-style: italic;
+}
+
+ul li {
+    font-weight: bold;
+}
+
+.logo {
+    width: 30%;
+    display:inline-block;
+    margin: 1 em auto;
+}
+
+/* I did not have any elements positioned side by side on my site, so I didn't feel the need to include media queries. */
