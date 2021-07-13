@@ -1,0 +1,96 @@
+/*CSS document*/
+
+body {
+    background-color: rgb(235, 237, 235);
+    color: rgb(40, 41, 40);
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: rgb(40, 41, 40);
+}
+
+a:hover {
+    color: rgb(3, 37, 111)
+}
+
+h2 {
+    font-family: azo-sans-uber, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.container {
+    max-width: 35em;
+    margin: auto;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    font-size: 1.5em;
+    margin-right: 0.7em;
+    text-transform: uppercase;
+    font-family: geller-headline, serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+
+nav li :hover {
+    text-decoration: underline 0.15em rgb(33, 37, 111);
+}
+
+h2, h3 {
+    font-family: geller-headline, serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.logo {
+    width: 30%;
+    display: inline-block;
+}
+
+.with-image {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.no-image {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.main-teaser {
+    margin-top: 2em;
+    margin-bottom: 6em;
+}
+
+hr {
+    border-color: #DB4587;
+}
+
+.main-teaser-h3 {
+    font-size: 150%;
+}
