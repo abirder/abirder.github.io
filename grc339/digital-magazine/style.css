@@ -1,7 +1,7 @@
 /*CSS document*/
 
 body {
-    background-color: rgb(253, 249, 252);
+    background-color: rgb(237, 243, 255);
     color: rgb(40, 41, 40);
     font-family: gill-sans-nova, sans-serif;
     font-weight: 300;
@@ -24,14 +24,23 @@ h2 {
 }
 
 div.container {
-    max-width: 35em;
+    max-width: 80em;
     margin: auto;
+}
+
+h1 {
+    width: 25em;
+}
+
+section, hr {
+    max-width: 40em;
+    margin: 0 auto 3em;
 }
 
 nav li {
     display: inline;
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-right: 0.7em;
     text-transform: uppercase;
     font-family: geller-headline, serif;
@@ -48,6 +57,11 @@ h2, h3 {
     font-family: geller-headline, serif;
     font-weight: 600;
     font-style: normal;
+}
+
+figcaption, footer {
+    font-style: italic;
+    font-weight: 300;
 }
 
 h3 {
@@ -73,24 +87,65 @@ ul {
 }
 
 .with-image {
-    margin-top: 4em;
-    margin-bottom: 4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .no-image {
-    margin-top: 4em;
-    margin-bottom: 4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .main-teaser {
-    margin-top: 2em;
-    margin-bottom: 6em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 hr {
     border-color: #DB4587;
+    margin-bottom: 0;
 }
 
 .main-teaser-h3 {
-    font-size: 150%;
+    font-size: 170%;
+}
+
+@media screen and (min-width: 60em) {
+    div.container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 0 1.5em;
+    }
+
+    header {
+        grid-column: 1/3;
+    }
+
+    main {
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 2em;
+    }
+
+    aside {
+        grid-column: 2/3;
+    }
+    
+    section.main-teaser {
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    section.main-teaser h3 {
+        margin: 0.25em auto 0.25em;
+    }
+
+    section.main-teaser p {
+        flex: 0 0 auto;
+        margin: 0;
+    }
+
+
+
 }
