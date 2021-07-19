@@ -28,8 +28,63 @@ div.container {
     margin: auto;
 }
 
+div.container-gallery {
+    max-width: 70em;
+    margin: auto;
+}
+
+div.container-stories {
+    max-width: 70em;
+    margin: auto;
+}
+
+p {
+    font-size: 105%;
+}
+
 h1 {
     width: 25em;
+}
+
+figure.figure-gallery {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    transition: left 400ms, opacity 400ms;
+    opacity: 0;
+}
+
+main.gallery {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding-bottom: calc(56% + 3em);
+    overflow: hidden;
+}
+
+nav.nav-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    flex: 1 0 6em;
+}
+
+input:nth-of-type(1):checked ~ main.gallery figure.figure-gallery:nth-of-type(1),
+input:nth-of-type(2):checked ~ main.gallery figure.figure-gallery:nth-of-type(2),
+input:nth-of-type(3):checked ~ main.gallery figure.figure-gallery:nth-of-type(3),
+input:nth-of-type(4):checked ~ main.gallery figure.figure-gallery:nth-of-type(4),
+input:nth-of-type(5):checked ~ main.gallery figure.figure-gallery:nth-of-type(5),
+input:nth-of-type(6):checked ~ main.gallery figure.figure-gallery:nth-of-type(6),
+input:nth-of-type(7):checked ~ main.gallery figure.figure-gallery:nth-of-type(7),
+input:nth-of-type(8):checked ~ main.gallery figure.figure-gallery:nth-of-type(8) {
+    left: 0;
+    opacity: 1;
+}
+
+input {
+    display: none;
 }
 
 section, hr {
@@ -112,6 +167,12 @@ hr {
 
 @media screen and (min-width: 60em) {
     div.container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 0 1.5em;
+    }
+
+    div.container-stories {
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-gap: 0 1.5em;
