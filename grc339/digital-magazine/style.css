@@ -6,7 +6,10 @@ body {
     font-family: gill-sans-nova, sans-serif;
     font-weight: 300;
     font-style: normal;
+    box-sizing: border-box;
 }
+
+
 
 a, a:visited {
     text-decoration: none;
@@ -38,8 +41,62 @@ div.container-stories {
     margin: auto;
 }
 
+div.container-newsletter {
+    max-width: 40em;
+    margin: auto;
+    padding: 1em;
+    line-height: 1.4em;
+}
+
+section.personal-info, section.newsletter-choices, section.submit {
+    background: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+section.personal-info, section.newsletter-choices h2 {
+    color:rgb(33, 37, 111);
+}
+
+section.newsletter-choices ul {
+    font-size: 110%;
+}
+
+section.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+section.personal-info ul li input[type="text"],
+section.personal-info ul li input[type="email"],
+section.personal-info ul li input[type="fav-team"] {
+	flex: 1 0 32em;
+	box-sizing: border-box;
+}
+
+section.personal-info ul li label {
+	flex: 0 0 10em;
+}
+
+section.order ul, section.method ul {
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+section.order ul li , section.method ul li {
+	flex: 1 0 15em;
+	}
+
+section.personal-info ul {
+	padding: 0;
+	list-style-type: none;
+}
+
 p {
     font-size: 105%;
+    max-width: 50em;
 }
 
 h1 {
@@ -83,7 +140,7 @@ input:nth-of-type(8):checked ~ main.gallery figure.figure-gallery:nth-of-type(8)
     opacity: 1;
 }
 
-input {
+div.container-gallery input {
     display: none;
 }
 
@@ -129,6 +186,10 @@ figure {
 
 img {
     width: 100%;
+}
+
+a.newsletter-link {
+    text-decoration: underline;
 }
 
 ul {
@@ -177,6 +238,10 @@ hr {
         grid-template-columns: 3fr 1fr;
         grid-gap: 0 1.5em;
     }
+
+    div.container-newsletter {
+        margin: auto;
+      }
 
     header {
         grid-column: 1/3;
