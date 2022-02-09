@@ -155,7 +155,7 @@ nav li {
     font-size: 1.8em;
     margin-right: 0.7em;
     text-transform: uppercase;
-    font-family: geller-headline, serif;
+    font-family: poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.03em;
@@ -166,7 +166,7 @@ nav li :hover {
 }
 
 h2, h3 {
-    font-family: geller-headline, serif;
+    font-family: poppins, sans-serif;
     font-weight: 600;
     font-style: normal;
 }
